@@ -1,0 +1,107 @@
+@media (max-width: 992px) {
+
+	.text-column {
+		padding-right: 15px;
+		float: none;
+	}
+
+	.form-column {
+		padding-left: 15px;
+		margin-top: -80px;
+		margin-bottom: 80px;
+		float: left;
+	}
+
+	.left-form .text-column {
+		padding-left: 15px;
+		float: none;
+	}
+
+	.left-form .form-column {
+		padding-right: 15px;
+	}
+
+	.submit-arrow {
+		display: none;
+	}
+
+	.intro-image {
+		display: none;
+	}
+
+	.clients {
+		margin-top: 20px;
+		float: left;
+		width: 100%;
+	}
+
+	.clients * {
+		text-align: center;
+	}
+
+	.pricing-table {
+		margin-bottom: 50px;
+	}
+
+	.pricing-table.featured {
+		margin-top: 0;
+	}
+
+	.testimonial-block {
+		padding: 50px 80px;
+	}
+
+	.split-columns .column {
+		padding-bottom: 80px;
+	}
+
+	.bottom-cta-image {
+		display: none;
+	}
+
+	.content {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	
+
+}
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	p.intro-description {
+		width: 100%;
+	}
+
+	ul.intro-features li {
+		line-height: 36px;
+	}
+
+	ul.intro-features img {
+		margin: 0;
+		margin-right: 30px;
+	}
+
+	.main-form input[type="submit"] {
+		font-size: 18px;
+	}
+
+	.testimonial-block {
+		padding: 30px;
+	}
+
+}
