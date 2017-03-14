@@ -1,0 +1,89 @@
+<!-- Подвал-->
+<section class="section footer">
+    <div class="container">
+        <div class="row">
+            <div class="column-1000">
+
+                <div class="social">
+                    <script type="text/javascript">
+                        (function() {
+                            if (window.pluso)
+                                if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso == undefined) {
+                                window.ifpluso = 1;
+                                var d = document,
+                                    s = d.createElement('script'),
+                                    g = 'getElementsByTagName';
+                                s.type = 'text/javascript';
+                                s.charset = 'UTF-8';
+                                s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                var h = d[g]('body')[0];
+                                h.appendChild(s);
+                            }
+                        })();
+                    </script>
+                    <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+                </div>
+            </div>
+
+            <p>© 2017. ИП КЛИМЕНКОВА Н.А./ ОГРН 310504733400041 </p>
+        </div>
+    </div>
+</section>
+
+<div id="thanks-popup" class="section thanks-popup mfp-hide">
+    <div class="thanks-heading">
+        <h1>Thank you for trusting us!</h1>
+    </div>
+    <div class="thanks-body">
+        <p>We will contact you shortly!<br> In the meantime you can download our <a href="#">services brochure</a>.</p>
+        <p>Want to know when we have special deals?</p>
+        <a class="button orange" href="#">Visit special deals page</a>
+    </div>
+</div>
+
+<!-- ==============================================
+	JS
+	=============================================== -->
+<script type="text/javascript" src="js/components.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+    $('#first .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_1').fadeIn(500);
+    });
+    $('#second .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_2').fadeIn(500);
+    });
+    $('#third .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_3').fadeIn(500);
+    });
+    $('#fourth .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_4').fadeIn(500);
+    });
+    $('#fifth .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_5').fadeIn(500);
+    });
+    $('#sixth .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_6').fadeIn(500);
+    });
+    $('#seventh .trigger').on('click', function(event) {
+        event.preventDefault();
+        $('#modal_7').fadeIn(500);
+    });
+    $('.close').on('click', function(event) {
+        event.preventDefault();
+        $('.modal').fadeOut(500);
+    });
+</script>
+<script type="text/javascript" charset="UTF-8" async="" src="js/pluso-like.js"></script>
+</body>
+
+</html>

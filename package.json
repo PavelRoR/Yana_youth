@@ -11,6 +11,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-html": "^0.4.5",
+    "gulp-rigger": "^0.5.8",
     "html": "^1.0.0"
   },
   "dependencies": {

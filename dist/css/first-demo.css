@@ -43,8 +43,7 @@ h6 {
 Links
 ================================================================== */
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     color: #555555;
 }
 
@@ -65,62 +64,37 @@ label {
     color: #404040;
 }
 
-input,
-textarea,
-select,
-button {
+input, textarea, select, button {
     background: #ffffff;
     color: #242424;
     border: 1px solid #e4e4e4;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #ff6600;
 }
 
-input[type="submit"],
-button,
-a.button {
+input[type="submit"], button, a.button {
     color: #ffffff;
     background-color: #94dc34;
-    background: -webkit-linear-gradient(#94dc34, #51a80d);
-    background: -moz-linear-gradient(#94dc34, #51a80d);
-    background: -ms-linear-gradient(#94dc34, #51a80d);
-    background: -o-linear-gradient(#94dc34, #51a80d);
     background: linear-gradient(#94dc34, #51a80d);
     box-shadow: inset 0px 1px 0px #b2ea73, inset 0 -1px 2px #2e6d06;
 }
 
-input[type="submit"]:hover,
-button:hover,
-a.button:hover {
+input[type="submit"]:hover, button:hover, a.button:hover {
     color: #ffffff;
     background-color: #81d128;
-    background: -webkit-linear-gradient(#81d128, #44a00a);
-    background: -moz-linear-gradient(#81d128, #44a00a);
-    background: -ms-linear-gradient(#81d128, #44a00a);
-    background: -o-linear-gradient(#81d128, #44a00a);
     background: linear-gradient(#81d128, #44a00a);
 }
 
 a.button.orange {
     background: #f7941d;
-    background: -webkit-linear-gradient(#f7941d, #d75305);
-    background: -moz-linear-gradient(#f7941d, #d75305);
-    background: -ms-linear-gradient(#f7941d, #d75305);
-    background: -o-linear-gradient(#f7941d, #d75305);
     background: linear-gradient(#f7941d, #d75305);
     box-shadow: inset 0px 1px 0px #ffbb6a, inset 0 -1px 2px #a33f03;
 }
 
 a.button.orange:hover {
     background: #eb8016;
-    background: -webkit-linear-gradient(#eb8016, #cc4504);
-    background: -moz-linear-gradient(#eb8016, #cc4504);
-    background: -ms-linear-gradient(#eb8016, #cc4504);
-    background: -o-linear-gradient(#eb8016, #cc4504);
     background: linear-gradient(#eb8016, #cc4504);
 }
 
@@ -196,10 +170,7 @@ Main Form
 
 .main-form {
     background: #ffffff;
-    background: -webkit-linear-gradient(#ffffff, #e6e6e6);
-    background: -moz-linear-gradient(#ffffff, #e6e6e6);
     background: linear-gradient(#ffffff, #e6e6e6);
-    background: -ms-linear-gradient(#ffffff, #e6e6e6);
     background: -o-linear-gradient(#ffffff, #e6e6e6);
     color: #696969;
 }
