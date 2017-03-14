@@ -13,7 +13,10 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-html": "^0.4.5",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
     "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^2.1.0",
     "gulp-uncss": "^1.0.6",
     "html": "^1.0.0"
   },
