@@ -11,13 +11,22 @@ var gulp = require('gulp'),
     styl = require('gulp-stylus'),
     validator = require('gulp-html'),
     imagemin = require('gulp-imagemin'),
-    rigger = require('gulp-rigger');
+    rigger = require('gulp-rigger'),
+    htmlmin = require('gulp-htmlmin'),
+    varuncss = require('gulp-uncss'),
+    nano = require('gulp-cssnano');
 
 gulp.task('html', function() {
     return gulp.src('app/html/index.html')
         .pipe(rigger())
         .pipe(gulp.dest('app'))
         .pipe(browserSync.reload({ stream: true }))
+});
+
+gulp.task('minify', function() {
+    return gulp.src('app/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('pug', function buildHTML() {
@@ -27,7 +36,6 @@ gulp.task('pug', function buildHTML() {
         .pipe(browserSync.reload({ stream: true }))
 });
 
-
 gulp.task('styl', function() {
     return gulp.src('app/styl/*.styl')
         .pipe(styl({
@@ -36,7 +44,6 @@ gulp.task('styl', function() {
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({ stream: true }))
 });
-
 
 gulp.task('css', function() {
     var processors = [
@@ -50,6 +57,16 @@ gulp.task('css', function() {
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({ stream: true }))
+});
+
+gulp.task('cssconcat', function() {
+    return gulp.src('app/css/*.css')
+        .pipe(concat('main.css'))
+        .pipe(uncss({
+            html: ['index.html', 'app/index.css']
+        }))
+        .pipe(nano())
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('watch', ['browser-sync', 'pug', 'styl', 'css', 'html'], function() {
@@ -73,7 +90,7 @@ gulp.task('scripts', function() {
     return gulp.src([
             'app/js/*.js'
         ])
-        // .pipe(concat('libs.min.js'))
+        .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
@@ -102,8 +119,6 @@ gulp.task('image', function() {
 gulp.task('dhtml', function() {
     gulp.src('app/index.html')
         .pipe(gulp.dest('dist'))
-        .pipe(browserSync.reload({ stream: true }))
-    gulp.watch('app/index.html', ['dhtml'])
 });
 
-gulp.task('default', ['styl', 'pug', 'css', 'watch', 'browser-sync', 'scripts', 'html', 'fonts', 'image', 'dhtml']);
+gulp.task('default', ['styl', 'pug', 'css', 'watch', 'browser-sync', 'scripts', 'html', 'fonts', 'image', 'dhtml', 'minify', 'cssconcat']);

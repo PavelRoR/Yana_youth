@@ -168,7 +168,7 @@ ul.intro-features img {
 Main Form
 ================================================================== */
 
-.main-form {
+.form_1 {
     background: #ffffff;
     background: linear-gradient(#ffffff, #e6e6e6);
     background: -o-linear-gradient(#ffffff, #e6e6e6);
@@ -188,7 +188,7 @@ Main Form
     color: #a9a9a9;
 }
 
-.main-form h4 {
+.form_1 h4 {
     font-size: 22px;
 }
 

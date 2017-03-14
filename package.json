@@ -10,8 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
     "gulp-html": "^0.4.5",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-rigger": "^0.5.8",
+    "gulp-uncss": "^1.0.6",
     "html": "^1.0.0"
   },
   "dependencies": {
