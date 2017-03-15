@@ -34,6 +34,23 @@ $(function() {
 });
 
 $(function() {
+
+    $(".video__img").click(function() {
+        var dataYoutube = $(this).parents('.js-video').attr('data-youtube');
+        $(this).parents('.js-video').html('<iframe src="https://www.youtube.com/embed/' + dataYoutube + '?autoplay=1" allowfullscreen></iframe>')
+    });
+
+});
+$(function() {
+
+    $(".video__img").click(function() {
+        var dataYoutube = $(this).parents('.js-video').attr('data-youtube');
+        $(this).parents('.js-video').html('<iframe src="https://www.youtube.com/embed/' + dataYoutube + '?autoplay=1" allowfullscreen></iframe>')
+    });
+
+});
+
+$(function() {
     $("a[href^='#']").click(function() {
         var _href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });

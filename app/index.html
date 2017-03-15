@@ -324,13 +324,19 @@
             <div class="column-50 column">
                 <h5>До прохождения полного курса "Мастерская омоложения" и после Яна Соколова</h5>
                 <img src="img/do-posle.jpg" alt="Яна Соколова">
-                <iframe src="https://www.youtube-nocookie.com/embed/wadKcVrbKXw" allowfullscreen></iframe>
+                <div class="video js-video" data-youtube="wadKcVrbKXw">
+                    <img class="video__img" src="img/yana.jpg" alt="Яна: до/после" />
+                    <!--<button id="video__play_1" class="video__play" type="button"></button>-->
+                </div>
                 <p>Нажмите на кнопку и посмотрите видео</p>
             </div>
             <div class="column-50 last-column">
                 <h5>До прохождения полного курса "Мастерская омоложения" и после Наталья Клименкова</h5>
                 <img src="img/do-posle2.jpg" alt="Наталья Клименкова">
-                <iframe src="https://www.youtube-nocookie.com/embed/NdbClk1M39I" allowfullscreen></iframe>
+                <div class="video js-video" data-youtube="NdbClk1M39I">
+                    <img class="video__img" src="img/nata.jpg" alt="Ната: до/после" />
+                    <!--<button id="video__play_2" class="video__play" type="button"></button>-->
+                </div>
                 <p>Нажмите на кнопку и посмотрите видео</p>
             </div>
         </div>
@@ -344,43 +350,43 @@
             <div class="container">
                 <div class="column-25">
                     <div class="modal_serts" id="first">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_1.jpg" alt="Сертификат Яны 1"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_1_min.jpg" alt="Сертификат Яны 1"></a>
                         <div class="modal" id="modal_1"><img class="img" src="img/yana_sert_1.jpg" alt="Сертификат Яны 1"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                     <div class="modal_serts" id="second">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_2.jpg" alt="Сертификат Яны 2"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_2_min.jpg" alt="Сертификат Яны 2"></a>
                         <div class="modal" id="modal_2"><img class="img" src="img/yana_sert_2.jpg" alt="Сертификат Яны 2"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                 </div>
                 <div class="column-25">
                     <div class="modal_serts" id="third">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_3.jpg" alt="Сертификат Яны 3"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/yana_sert_3_min.jpg" alt="Сертификат Яны 3"></a>
                         <div class="modal" id="modal_3"><img class="img" src="img/yana_sert_3.jpg" alt="Сертификат Яны 3"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                     <div class="modal_serts" id="fourth">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_1.jpg" alt="Сертификат Натальи 1"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_1_min.jpg" alt="Сертификат Натальи 1"></a>
                         <div class="modal" id="modal_4"><img class="img" src="img/nata_sert_1.jpg" alt="Сертификат Натальи 1"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                 </div>
                 <div class="column-25">
                     <div class="modal_serts" id="fifth">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_2.jpg" alt="Сертификат Натальи 2"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_2_min.jpg" alt="Сертификат Натальи 2"></a>
                         <div class="modal" id="modal_5"><img class="img" src="img/nata_sert_2.jpg" alt="Сертификат Натальи 2"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                 </div>
                 <div class="column-25">
                     <div class="modal_serts" id="sixth">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_3.jpg" alt="Сертификат Натальи 3"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_3_min.jpg" alt="Сертификат Натальи 3"></a>
                         <div class="modal" id="modal_6"><img class="img" src="img/nata_sert_3.jpg" alt="Сертификат Натальи 3"> <span class="close">Закрыть</span>
                         </div>
                     </div>
                     <div class="modal_serts" id="seventh">
-                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_4.jpg" alt="Сертификат Натальи 4"></a>
+                        <a href="javascript:void(0)" class="trigger"><img src="img/nata_sert_4_min.jpg" alt="Сертификат Натальи 4"></a>
                         <div class="modal" id="modal_7"><img class="img" src="img/nata_sert_4.jpg" alt="Сертификат Натальи 4"> <span class="close">Закрыть</span>
                         </div>
                     </div>
@@ -459,7 +465,8 @@
 </div>
 <!-- Стили и скрипты -->
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="jquery-migrate.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" charset="UTF-8" async="" src="js/pluso-like.js"></script>
 </body>
